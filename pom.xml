@@ -12,6 +12,7 @@
     <modules>
         <module>SpringAopDemo</module>
         <module>MybatisDemo</module>
+        <module>Mybatis+Springboot</module>
     </modules>
 
     <parent>
@@ -20,7 +21,6 @@
         <version>2.4.0</version>
         <relativePath />
     </parent>
-
 
     <dependencies>
         <dependency>
@@ -32,15 +32,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
-        </dependency>
-
-
-
-        <!-- mysql链接驱动-->
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.22</version>
         </dependency>
 
         <!-- 热部署模块 -->
@@ -68,17 +59,31 @@
                 <version>2.4.0</version>
             </dependency>
 
-<!--            &lt;!&ndash; mybatis-generator插件的依赖核心 &ndash;&gt;-->
-<!--            <dependency>-->
-<!--                <groupId>org.mybatis.generator</groupId>-->
-<!--                <artifactId>mybatis-generator-core</artifactId>-->
-<!--                <version>1.4.0</version>-->
-<!--            </dependency>-->
-
             <dependency>
                 <groupId>org.mybatis</groupId>
                 <artifactId>mybatis</artifactId>
                 <version>3.5.6</version>
+            </dependency>
+
+            <!--数据库依赖starter-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-jdbc</artifactId>
+                <version>2.4.0</version>
+            </dependency>
+
+            <!-- mysql链接驱动-->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>8.0.22</version>
+            </dependency>
+
+
+            <dependency>
+                <groupId>org.mybatis.spring.boot</groupId>
+                <artifactId>mybatis-spring-boot-starter</artifactId>
+                <version>2.1.4</version>
             </dependency>
 
         </dependencies>

@@ -1,0 +1,19 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    username: test
+    password:
+    url: jdbc:mysql://localhost/SPRINGBOOTLEARN
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis:
+  mapper-locations: classpath:mapping/*Mapper.xml
+
+#showSql
+logging:
+  level:
+    com:
+      example:
+        mapper : debug

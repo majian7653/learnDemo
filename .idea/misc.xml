@@ -10,6 +10,7 @@
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/Mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/MybatisDemo/Mybatis+Springboot/pom.xml" />
         <option value="$PROJECT_DIR$/SpringAopDemo/Mybatis/pom.xml" />
         <option value="$PROJECT_DIR$/SpringAopDemo/MybatisDemo/pom.xml" />
       </set>
