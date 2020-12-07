@@ -34,18 +34,13 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- mybatis核心 -->
-        <dependency>
-            <groupId>org.mybatis.generator</groupId>
-            <artifactId>mybatis-generator-core</artifactId>
-            <version>1.4.0</version>
-        </dependency>
+
 
         <!-- mysql链接驱动-->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.38</version>
+            <version>8.0.22</version>
         </dependency>
 
         <!-- 热部署模块 -->

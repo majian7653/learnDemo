@@ -12,6 +12,8 @@
     <!-- FIXME change it to the project's website -->
     <url>http://www.example.com</url>
 
+    <description>该工程为插件mybatis-generator的使用样例</description>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.7</maven.compiler.source>
@@ -98,17 +100,6 @@
                         <version>8.0.22</version>
                     </dependency>
 
-                    <dependency>
-                        <groupId>org.mybatis.generator</groupId>
-                        <artifactId>mybatis-generator-core</artifactId>
-                        <version>1.4.0</version>
-                    </dependency>
-
-                    <dependency>
-                        <groupId>org.mybatis</groupId>
-                        <artifactId>mybatis</artifactId>
-                        <version>3.4.6</version>
-                    </dependency>
                 </dependencies>
             </plugin>
         </plugins>
