@@ -68,6 +68,19 @@
                 <version>2.4.0</version>
             </dependency>
 
+<!--            &lt;!&ndash; mybatis-generator插件的依赖核心 &ndash;&gt;-->
+<!--            <dependency>-->
+<!--                <groupId>org.mybatis.generator</groupId>-->
+<!--                <artifactId>mybatis-generator-core</artifactId>-->
+<!--                <version>1.4.0</version>-->
+<!--            </dependency>-->
+
+            <dependency>
+                <groupId>org.mybatis</groupId>
+                <artifactId>mybatis</artifactId>
+                <version>3.5.6</version>
+            </dependency>
+
         </dependencies>
 
     </dependencyManagement>
