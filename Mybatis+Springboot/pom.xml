@@ -10,7 +10,10 @@
 
   <name>Mybatis+Springboot</name>
   <!-- FIXME change it to the project's website -->
-  <url>https://blog.csdn.net/iku5200/article/details/82856621</url>
+  <url>
+    https://blog.csdn.net/iku5200/article/details/82856621
+    https://www.cnblogs.com/charlypage/p/11220755.html
+  </url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -61,6 +64,11 @@
     <dependency>
       <groupId>org.mybatis</groupId>
       <artifactId>mybatis</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>com.github.pagehelper</groupId>
+      <artifactId>pagehelper-spring-boot-starter</artifactId>
     </dependency>
 
 

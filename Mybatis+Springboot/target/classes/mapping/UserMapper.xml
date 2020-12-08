@@ -3,14 +3,41 @@
 <mapper namespace="org.example.mapper.UserMapper">
 
     <resultMap id="BaseResultMap" type="org.example.entity.User">
-        <result column="id" jdbcType="INTEGER" property="id" />
-        <result column="userName" jdbcType="VARCHAR" property="userName" />
-        <result column="passWord" jdbcType="VARCHAR" property="passWord" />
-        <result column="realName" jdbcType="VARCHAR" property="realName" />
+        <result column="id" jdbcType="INTEGER" property="id"/>
+        <result column="userName" jdbcType="VARCHAR" property="userName"/>
+        <result column="passWord" jdbcType="VARCHAR" property="passWord"/>
+        <result column="realName" jdbcType="VARCHAR" property="realName"/>
     </resultMap>
 
-    <select id="Sel" resultType="org.example.entity.User">
+    <sql id="Base_Column_List">
+    ID,USERNAME,PASSWORD,REALNAME
+    </sql>
+
+    <insert id="insert" parameterType="org.example.entity.User" useGeneratedKeys="true" keyColumn="id">
+        insert into user (ID,USERNAME,PASSWORD,REALNAME) values
+        (#{id},#{userName},#{passWord},#{realName})
+    </insert>
+
+    <delete id="deleteById" parameterType="org.example.entity.User">
+        delete from user where id = #{id}
+    </delete>
+
+    <select id="selectById" resultType="org.example.entity.User">
         select * from user where id = #{id}
     </select>
+
+    <select id="getAllUser" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from user
+    </select>
+
+
+
+
+
+
+
+
 
 </mapper>

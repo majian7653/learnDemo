@@ -1,22 +1,20 @@
 package org.example.service;
 
+import com.github.pagehelper.PageInfo;
 import org.example.entity.User;
-import org.example.mapper.UserMapper;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
-/**
- * @Deacription TODO
- * @Author majian
- * @Date 2020/12/7
- * @Version 1.0
- **/
+import java.util.List;
 
-@Service
-public class UserService {
-    @Autowired
-    UserMapper userMapper;
-    public User Sel(int id){
-        return userMapper.Sel(id);
-    }
+public interface UserService {
+
+    Integer insert(User user);
+
+    Integer deleteById(Integer id);
+
+
+    User selectById(int id);
+
+    List<User> getAllUser();
+
+    PageInfo<User> getAllUserForPage(int pageNo, int pageSize);
 }
