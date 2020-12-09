@@ -53,19 +53,4 @@ public class BrokerAspect {
         System.out.println("异常通知：球迷要求退票！");
     }
 
-//    /**
-//     * @description  使用环绕通知
-//     * 由于该函数的使用，前端页面无法得到正确的值
-//     */
-//    @Around("BrokerAspect()")
-//    public void doAroundGame(ProceedingJoinPoint pjp) throws Throwable {
-//        try{
-//            System.out.println("经纪人正在处理球星赛前事务！");
-//            pjp.proceed();
-//            System.out.println("返回通知：经纪人为球星表现疯狂鼓掌！");
-//        }
-//        catch(Throwable e){
-//            System.out.println("异常通知：球星因为某种原因未能出战，球迷要求退票！");
-//        }
-//    }
 }

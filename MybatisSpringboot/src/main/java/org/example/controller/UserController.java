@@ -3,6 +3,8 @@ package org.example.controller;
 import com.github.pagehelper.PageInfo;
 import org.example.entity.User;
 import org.example.service.UserService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -18,6 +20,8 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/api/user")
 public class UserController {
 
+    private static Logger logger = LoggerFactory.getLogger(UserController.class);
+
     @Autowired
     private UserService userService;
 
@@ -28,6 +32,7 @@ public class UserController {
 
     @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
     public String deleteUser(@PathVariable Integer id){
+        logger.info("deleteUser");
         return userService.deleteById(id).toString();
     }
 
@@ -48,6 +53,5 @@ public class UserController {
         PageInfo<User> page = userService.getAllUserForPage(pageNo,pageSize);
         return  page;
     }
-
 
 }
