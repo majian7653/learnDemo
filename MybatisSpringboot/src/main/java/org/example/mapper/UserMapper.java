@@ -35,7 +35,7 @@ public interface UserMapper {
     * @Param [user]
     * @return java.lang.Integer
     **/
-    int insert(User user);
+    Integer insert(User user);
 
     /**
     * @Description //通过用户id删除

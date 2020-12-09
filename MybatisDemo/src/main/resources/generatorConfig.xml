@@ -20,7 +20,6 @@
                         password="">
         </jdbcConnection>
 
-
         <!--生成entity类存放位置-->
         <javaModelGenerator targetPackage="org.example.entity" targetProject="src/main/java">
             <property name="enableSubPackages" value="true"/>

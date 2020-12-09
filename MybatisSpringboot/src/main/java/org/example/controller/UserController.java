@@ -26,6 +26,12 @@ public class UserController {
         return userService.insert(user).toString();
     }
 
+    @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
+    public String deleteUser(@PathVariable Integer id){
+        return userService.deleteById(id).toString();
+    }
+
+
     @RequestMapping(value = "/{id}",method = RequestMethod.GET)
     public String GetUser( @PathVariable Integer id){
         return userService.selectById(id).toString();
@@ -37,7 +43,7 @@ public class UserController {
      * @param pageSize 一页显示多少条
      * @return
      */
-    @RequestMapping("/list")
+    @RequestMapping(value = "/list",method = RequestMethod.GET)
     public PageInfo<User> list(@RequestParam(value="pageNo",defaultValue="1")int pageNo, @RequestParam(value="pageSize",defaultValue="10")int pageSize) {
         PageInfo<User> page = userService.getAllUserForPage(pageNo,pageSize);
         return  page;
