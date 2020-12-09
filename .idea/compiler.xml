@@ -6,7 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Mybatis+Springboot" />
+        <module name="MybatisSpringboot" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -16,8 +16,8 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Mybatis" options="" />
-      <module name="Mybatis+Springboot" options="-parameters" />
       <module name="MybatisDemo" options="-parameters" />
+      <module name="MybatisSpringboot" options="-parameters" />
       <module name="SpringAopDemo" options="-parameters" />
     </option>
   </component>
