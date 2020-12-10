@@ -39,6 +39,7 @@ public class UserController {
 
     @RequestMapping(value = "/{id}",method = RequestMethod.GET)
     public String GetUser( @PathVariable Integer id){
+        logger.debug(String.format("查询用户%s信息",id.toString()));
         return userService.selectById(id).toString();
     }
 

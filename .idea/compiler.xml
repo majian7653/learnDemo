@@ -6,11 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="SwaggerSpringboot" />
         <module name="MybatisSpringboot" />
+        <module name="SwaggerSpringBoot" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Mybatis" target="1.7" />
+      <module name="SwaggerSpringBoot" target="1.7" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -19,6 +22,8 @@
       <module name="MybatisDemo" options="-parameters" />
       <module name="MybatisSpringboot" options="-parameters" />
       <module name="SpringAopDemo" options="-parameters" />
+      <module name="SwaggerSpringBoot" options="-parameters" />
+      <module name="SwaggerSpringboot" options="-parameters" />
     </option>
   </component>
 </project>

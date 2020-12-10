@@ -13,7 +13,8 @@ mybatis:
 
 #showSql
 logging:
+  config: classpath:logback-spring.xml
   level:
-    com:
+    org:
       example:
         mapper : debug

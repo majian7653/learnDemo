@@ -13,6 +13,7 @@
         <module>SpringAopDemo</module>
         <module>MybatisDemo</module>
         <module>MybatisSpringboot</module>
+        <module>SwaggerSpringboot</module>
     </modules>
 
     <parent>
@@ -96,6 +97,25 @@
             </dependency>
 
 
+            <!--Swagger-文档生成依赖-->
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger2</artifactId>
+                <version>2.9.2</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger-ui</artifactId>
+                <version>2.9.2</version>
+            </dependency>
+
+            <!--activeMq依赖，有问题，不建议用-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-amqp</artifactId>
+                <version>2.4.0</version>
+            </dependency>
         </dependencies>
 
     </dependencyManagement>
