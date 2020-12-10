@@ -167,6 +167,8 @@
 
     <!-- 4. 最终的策略 -->
     <!-- 4.1 开发环境:打印控制台-->
+    <!--logger name 为需要记录日志的包名，默认级别为root指定的级别-->
+
     <springProfile name="dev">
         <logger name="org.example" level="debug"/>
     </springProfile>
