@@ -96,6 +96,14 @@
                 <version>1.3.0</version>
             </dependency>
 
+            <!--数据库链接池依赖-->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid-spring-boot-starter</artifactId>
+                <version>1.2.3</version>
+            </dependency>
+
+
 
             <!--Swagger-文档生成依赖-->
             <dependency>
@@ -110,12 +118,18 @@
                 <version>2.9.2</version>
             </dependency>
 
-            <!--activeMq依赖，有问题，不建议用-->
+            <!--spring sercurity依赖-->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-amqp</artifactId>
+                <artifactId>spring-boot-starter-security</artifactId>
                 <version>2.4.0</version>
             </dependency>
+
+
+
+
+
+
         </dependencies>
 
     </dependencyManagement>
@@ -166,6 +180,7 @@
             </plugins>
         </pluginManagement>
     </build>
+
 
 
 </project>

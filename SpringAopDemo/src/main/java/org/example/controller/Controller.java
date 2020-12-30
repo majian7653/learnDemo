@@ -41,9 +41,9 @@ public class Controller {
     }
 
     @RequestMapping(value = "/Durant/{point}")
-    public String Durant(@PathVariable("point")  int point){
-        System.out.println("杜兰特上场打球了！！");
-        return "杜兰特上场打球了！！";
+    public void Durant(@PathVariable("point")  int point){
+        System.out.println("杜兰特上场打球了！"+ point);
+//        return "杜兰特上场打球了！！";
     }
 
 }
